@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="centered">
+
+<form [formGroup]="formData" (ngSubmit)="submit(formData.value)">
+
+  <h3 class="text-center">Create Customer</h3>
+
+  <!-- for name  -->
+
+  <div class="form-group">
+      <label>Name:</label>
+      <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Name" formControlName="name">
+      <span class="text-danger warning" *ngIf="formData.get('name')?.touched&& formData.get('name')?.invalid ">please enter name</span>
+    </div>
+
+    <!-- for email  -->
+
+  <div class="form-group">
+    <label >Email address</label>
+    <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+    <span class="text-danger warning" *ngIf="formData.get('email')?.touched&& formData.get('email')?.invalid ">please enter email</span>
+  </div>
+
+ 
+  <!-- for country  -->
+
+    <div class="form-group">
+      <label>country</label>
+     <select  name="country" id="country"  formControlName="country" class="form-control"  >
+      <option  *ngFor="let country of countryData" value="{{country}}" >{{country}}</option>
+     </select>
+     <span class="text-danger warning" *ngIf="formData.get('country')?.touched&& formData.get('country')?.invalid ">please select country</span>
+  </div>
+
+
+<!-- for region  -->
+
+  <div class="form-group">
+   <label >region</label>
+   <select  name="region" id="region" formControlName="region" class="form-control">
+    <option value="{{region}}" *ngFor="let region of regionData">{{region}}</option>
+   </select>
+   <span class="text-danger warning" *ngIf="formData.get('region')?.touched&& formData.get('region')?.invalid ">please select region</span>
+</div>
+
+
+
+    <div class="text-center">
+    <button type="submit" class="btn btn-secondary" [disabled]="formData.invalid" >Create Customer</button>
+    </div>
+    
+</form>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
