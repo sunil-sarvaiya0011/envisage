@@ -8,12 +8,9 @@
         <th>Privacy</th>
     </tr>
 
-    <tr *ngFor="let item of pinData">
+    <tr *ngFor="let item of pinsData">
         <td>{{item.title}}</td>
-        <td><img src="{{item.image}}" alt="**"></td>
-        <!-- <td><img src="../Users/BAPS/Desktop/dummy.png" alt="**"></td> -->
-
-        <!-- <td>{{item.image}}</td> -->
+      <td><img src="{{item.img.img}}" class="image" alt="{{item.img.img}}"></td>
         <td >
             <ul>
                 <li *ngFor="let xyz of item.collaborators" style="list-style-type: none">{{xyz}}</li>

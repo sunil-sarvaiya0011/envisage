@@ -30,42 +30,39 @@
       "region": "Asia",
       "country": "India",
       "id": 2
+    },
+    {
+      "name": "Naresh Sarvaiya",
+      "email": "naresh@gmail.com",
+      "region": "Asia",
+      "country": "India",
+      "id": 3
     }
   ],
   "pinDetails": [
     {
-      "title": "rajesh",
-      "image": "",
+      "title": "sunil",
       "collaborators": [
-        "Sunil Sarvaiya",
-        "Rajesh Sarvaiya"
+        "Sunil Sarvaiya"
       ],
       "privacy": "public",
       "id": 1
     },
     {
-      "title": "sunilll",
-      "image": "C:\\fakepath\\dummy.png",
+      "title": "xyx",
       "collaborators": [
-        "Sunil Sarvaiya"
+        "Naresh Sarvaiya"
       ],
       "privacy": "public",
       "id": 2
     },
     {
-      "id": 3
-    },
-    {
-      "title": "aass",
-      "image": "C:\\fakepath\\dummy.png",
+      "title": "xyz",
       "collaborators": [
-        "Sunil Sarvaiya"
+        "Rajesh Sarvaiya"
       ],
       "privacy": "public",
-      "id": 4
-    },
-    {
-      "id": 5
+      "id": 3
     }
   ],
   "data": {

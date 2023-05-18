@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 })
 export class CreateCustomerComponent {
 
-  
   formData!:any;
   countryData: any;
   regionData:any;
@@ -55,11 +54,7 @@ export class CreateCustomerComponent {
     forCountriesData(){
       this.service.countriesData().subscribe((res)=>{
 
-      const rdata = Object.entries(res);
-      const uniqueRegions = new Set();
-      const regionData: any[] = [];
-
-      const cdata = Object.entries(res)    
+      const cdata = Object.entries(res) ;   
       this.countryData  = cdata.map((key:any)=>{ 
         return  key[1].country
         });
