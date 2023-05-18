@@ -26,3 +26,20 @@
 <button [routerLink]="['/addPin']" routerLinkActive="router-link-active" class="btn btn-secondary">+ Add pin</button>
 
 </div>
+
+<div class="text-center">
+<button (click)="forpin()"  class="btn-secondary btn">+ Create pin</button>
+<button (click)="forCustomer()" class="btn-secondary btn">+ Create customer</button>
+</div>
+
+
+<div *ngIf="forCustomerr" class="overlay">
+  <app-create-customer></app-create-customer>
+</div>
+
+
+<div *ngIf="forpinn" class="overlay">
+
+    <app-add-pin></app-add-pin>
+  </div>
+  

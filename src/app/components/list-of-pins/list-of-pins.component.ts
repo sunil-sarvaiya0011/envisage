@@ -55,4 +55,22 @@ export class ListOfPinsComponent {
     }
   }
 
+  // toggle 
+
+  
+  forCustomerr = false;
+  forpinn=false;
+
+  forCustomer() {
+    this.forCustomerr = !this.forCustomerr;
+  }
+
+  forpin(){
+
+    this.forpinn = !this.forpinn;
+
+
+  }
+  
+
 }
